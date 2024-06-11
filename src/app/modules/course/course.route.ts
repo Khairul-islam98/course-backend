@@ -10,5 +10,6 @@ router.post(
   validateRequest(CourseValidation.createCourseSchemaValidation),
   CourseControllers.createCourse,
 );
+router.get('/', CourseControllers.getAllCourse);
 
 export const CourseRoutes = router;
